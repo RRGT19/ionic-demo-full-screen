@@ -1,0 +1,7 @@
+{
+  "name": "ionic-demo-full-screen",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
