@@ -11,7 +11,7 @@
 
   <ion-list>
     <ion-item>
-      <ion-select label="Default label" placeholder="Favorite Fruit">
+      <ion-select label="Works good (default)" placeholder="Favorite Fruit">
         <ion-select-option value="apple">Apple</ion-select-option>
         <ion-select-option value="banana">Banana</ion-select-option>
         <ion-select-option value="orange">Orange</ion-select-option>
@@ -19,7 +19,7 @@
     </ion-item>
 
     <ion-item>
-      <ion-select label="Fixed label" label-placement="fixed" placeholder="Favorite fruit">
+      <ion-select label="Works good (fixed)" label-placement="fixed" placeholder="Favorite fruit">
         <ion-select-option value="apple">Apple</ion-select-option>
         <ion-select-option value="banana">Banana</ion-select-option>
         <ion-select-option value="orange">Orange</ion-select-option>
@@ -27,7 +27,7 @@
     </ion-item>
 
     <ion-item>
-      <ion-select label="Stacked label" label-placement="stacked">
+      <ion-select label="Works good (stacked)" label-placement="stacked">
         <ion-select-option value="apple">Apple</ion-select-option>
         <ion-select-option value="banana">Banana</ion-select-option>
         <ion-select-option value="orange">Orange</ion-select-option>
@@ -35,7 +35,7 @@
     </ion-item>
 
     <ion-item>
-      <ion-select label="Floating label" label-placement="floating">
+      <ion-select label="Works good (Floating)" label-placement="floating">
         <ion-select-option value="apple">Apple</ion-select-option>
         <ion-select-option value="banana">Banana</ion-select-option>
         <ion-select-option value="orange">Orange</ion-select-option>
@@ -46,7 +46,7 @@
 
   <ion-list>
     <ion-item>
-      <ion-select aria-label="Fruit" interface="action-sheet" placeholder="Select fruit">
+      <ion-select aria-label="Fruit" interface="action-sheet" placeholder="Works good">
         <ion-select-option value="apples">Apples</ion-select-option>
         <ion-select-option value="oranges">Oranges</ion-select-option>
         <ion-select-option value="bananas">Bananas</ion-select-option>
@@ -56,10 +56,50 @@
 
   <ion-list>
     <ion-item>
-      <ion-select aria-label="Fruit" interface="popover" placeholder="Select fruit">
+      <ion-select aria-label="Fruit" interface="popover" placeholder="Not working properly">
         <ion-select-option value="apples">Apples</ion-select-option>
         <ion-select-option value="oranges">Oranges</ion-select-option>
         <ion-select-option value="bananas">Bananas</ion-select-option>
+        <ion-select-option value="bananas">Mangos</ion-select-option>
+        <ion-select-option value="bananas">Aguacado</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-select aria-label="Fruit" interface="popover" placeholder="Not working properly" [interfaceOptions]="{size: 'cover', component: null}">
+        <ion-select-option value="apples">Apples</ion-select-option>
+        <ion-select-option value="oranges">Oranges</ion-select-option>
+        <ion-select-option value="bananas">Bananas</ion-select-option>
+        <ion-select-option value="bananas">Mangos</ion-select-option>
+        <ion-select-option value="bananas">Aguacado</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <ion-list>
+    <ion-item>
+      <ion-select aria-label="Fruit" interface="popover" placeholder="Not working properly" [interfaceOptions]="{size: 'cover', component: null}">
+        <ion-select-option value="apples">Apples</ion-select-option>
+        <ion-select-option value="oranges">Oranges</ion-select-option>
+        <ion-select-option value="bananas">Bananas</ion-select-option>
+        <ion-select-option value="bananas">Mangos</ion-select-option>
+        <ion-select-option value="bananas">Aguacado</ion-select-option>
       </ion-select>
     </ion-item>
   </ion-list>

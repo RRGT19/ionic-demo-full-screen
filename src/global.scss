@@ -25,11 +25,53 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
-body {
-  background-color: black;
+$max-width: 64rem;
+
+.header-container {
+  max-width: $max-width;
+  padding: 16px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 20%;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+  }
+
+  .stores {
+    display: inline-flex;
+
+    a {
+      width: 124px;
+      height: 40px;
+    }
+
+    a:first-child {
+      margin-right: 14px;
+    }
+  }
 }
 
-ion-app {
-  margin: 0 auto;
-  max-width: 75rem;
+/* The device with borders */
+.tablet {
+  position: relative;
+  max-width: $max-width;
+  height: 80%;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 30px;
+  border-bottom-width: 30px;
+  border-radius: 36px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* The screen (or content) of the device */
+.tablet .content {
+  width: 100%;
+  height: auto;
+  background: white;
 }
